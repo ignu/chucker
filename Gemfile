@@ -10,6 +10,7 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem "sprockets-rails"
 
 gem "factory_bot_rails"
+gem 'mocha'
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
