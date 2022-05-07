@@ -9,8 +9,11 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-gem "factory_bot_rails"
-gem 'mocha'
+group :test, :development do
+  gem "factory_bot_rails"
+  gem 'rspec-rails'
+  gem 'pry'
+end
 
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"

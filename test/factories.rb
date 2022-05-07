@@ -9,5 +9,7 @@ FactoryBot.define do
     dice_roll { "1d20 + 3" }
     damage_roll { "1d4 + 3" }
     name { "spear" }
+
+    creature { build :creature }
   end
 end

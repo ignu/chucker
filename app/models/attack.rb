@@ -5,11 +5,26 @@ class Attack < ApplicationRecord
     attack_dice.roll
   end
 
+  def roll_damage
+    damage_dice.roll
+  end
+
+  def target(creature)
+    attack = roll_to_hit
+
+    {
+      success: attack >= creature.ac,
+      damage: roll_damage
+    }
+  end
+
+  private
+
   def attack_dice
     @attack_dice ||= GamesDice.create(dice_roll)
   end
 
-  def target(creatue)
-    attack = roll_to_hit
+  def damage_dice
+    @damage_dice ||= GamesDice.create(dice_roll)
   end
 end
