@@ -9,6 +9,8 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
+gem "factory_bot_rails"
+
 # Use postgresql as the database for Active Record
 gem "pg", "~> 1.1"
 
@@ -29,6 +31,8 @@ gem "jbuilder"
 
 # Use Redis adapter to run Action Cable in production
 gem "redis", "~> 4.0"
+
+gem 'games_dice'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"

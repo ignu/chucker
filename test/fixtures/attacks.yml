@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dice_roll: MyString
+  damage_roll: MyString
+  target_creature_id: 1
+  name: MyString
+  description: MyString
+
+two:
+  dice_roll: MyString
+  damage_roll: MyString
+  target_creature_id: 1
+  name: MyString
+  description: MyString

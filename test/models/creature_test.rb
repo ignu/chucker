@@ -1,7 +1,8 @@
 require "test_helper"
 
 class CreatureTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "attack" do
+    creature = Creature.new
+    assert creature
+  end
 end
