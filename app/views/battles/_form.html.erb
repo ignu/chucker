@@ -1,0 +1,27 @@
+<%= form_with(model: battle) do |form| %>
+  <% if battle.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(battle.errors.count, "error") %> prohibited this battle from being saved:</h2>
+
+      <ul>
+        <% battle.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :initiative, style: "display: block" %>
+    <%= form.number_field :initiative %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
