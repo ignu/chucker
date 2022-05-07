@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :creature do
-    title { "Kobold" }
+    name { "Kobold" }
     ac { 11 }
     hp { 3 }
   end
