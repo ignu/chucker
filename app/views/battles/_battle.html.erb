@@ -1,8 +1,23 @@
-<div>
+<div class="container w-full">
   <div class="text-xl font-bold">
     <%= battle.name %>
   </div>
-  <div class="bg-purple-400">
+
+  <div class="bg-gray-200 p-2 text-xs w-full">
     Initiative: <%= battle.initiative %>
+  </div>
+
+  <div>
+    <h3>Add Combatant</h3>
+    Type
+    <select class="w-32">
+      <value>----</value>
+    </select>
+
+
+    Quantity:
+    <input type="number"/>
+
+    <button>Add</button>
   </div>
 </div>
